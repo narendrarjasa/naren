@@ -1,16 +1,3 @@
-/* ============================================================
-   NAREN ARCHIVE - INTERACTIVE JAVASCRIPT
-   ============================================================
-   
-   This script handles:
-   - Smooth scrolling navigation
-   - Fade-in animations on scroll
-   - Active navbar highlighting
-   - Mobile menu management
-   - Event listeners for buttons
-   
-   ============================================================ */
-
 // ============================================================
 // DOCUMENT READY - Initialize all functions
 // ============================================================
@@ -24,6 +11,7 @@ document.addEventListener('DOMContentLoaded', function() {
     initFadeOnScroll();
     initButtonListeners();
     initMobileMenu();
+    initCardExpansion();
 });
 
 // ============================================================
@@ -211,6 +199,53 @@ function closeNavbarMenu() {
     if (navbarCollapse && navbarCollapse.classList.contains('show')) {
         navbarToggle.click();
     }
+}
+
+// ============================================================
+// CAST CARD EXPANSION - Click to show relationship info
+// ============================================================
+
+function initCardExpansion() {
+    const castCards = document.querySelectorAll('.cast-card');
+    
+    castCards.forEach(card => {
+        // Click on card to expand
+        card.addEventListener('click', function(e) {
+            // Don't expand if clicking the close button
+            if (e.target.closest('.close-btn')) {
+                return;
+            }
+            
+            // Close any other expanded cards
+            document.querySelectorAll('.cast-card.expanded').forEach(expandedCard => {
+                if (expandedCard !== card) {
+                    expandedCard.classList.remove('expanded');
+                }
+            });
+            
+            // Toggle current card
+            this.classList.toggle('expanded');
+        });
+        
+        // Close button functionality
+        const closeBtn = card.querySelector('.close-btn');
+        if (closeBtn) {
+            closeBtn.addEventListener('click', function(e) {
+                e.stopPropagation();
+                card.classList.remove('expanded');
+            });
+        }
+    });
+    
+    // Close expanded card when clicking outside
+    document.addEventListener('click', function(e) {
+        // Don't close if clicking inside a card
+        if (!e.target.closest('.cast-card')) {
+            document.querySelectorAll('.cast-card.expanded').forEach(card => {
+                card.classList.remove('expanded');
+            });
+        }
+    });
 }
 
 // ============================================================
