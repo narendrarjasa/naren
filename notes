@@ -1,0 +1,86 @@
+<!-- Memorial Entries Timeline -->
+            <div class="memorial-timeline">
+                <!-- Entry 1 -->
+                <div class="memorial-entry fade-in-element">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="memorial-image-container">
+                                <img src="assets/images/archive1.jpg" alt="Archive Entry" class="memorial-image">
+                                <div class="image-overlay"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="memorial-content">
+                                <h3 class="memorial-date">ENTRY 01</h3>
+                                <p class="memorial-timestamp">— RECORDED DATE UNKNOWN —</p>
+                                <p class="memorial-text">
+                                    The first signs appeared in fragments. Photographs would disappear. 
+                                    Voices on old recordings would fade mid-sentence. But the memories remained, 
+                                    lodged in the minds of those who knew.
+                                </p>
+                                <p class="memorial-quote">
+                                    "The absence became more real than the presence."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Divider -->
+                <div class="memorial-divider fade-in-element"></div>
+                
+                <!-- Entry 2 -->
+                <div class="memorial-entry fade-in-element">
+                    <div class="row g-4 align-items-center flex-row-reverse">
+                        <div class="col-lg-6">
+                            <div class="memorial-image-container">
+                                <img src="assets/images/archive2.jpg" alt="Archive Entry" class="memorial-image">
+                                <div class="image-overlay"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="memorial-content">
+                                <h3 class="memorial-date">ENTRY 02</h3>
+                                <p class="memorial-timestamp">— TIME IMMEMORIAL —</p>
+                                <p class="memorial-text">
+                                    Years passed in silence. The archive grew thicker with forgotten moments. 
+                                    Each entry a whisper, each timestamp a heartbeat. The world moved on, 
+                                    but something remained in the shadows, watching, waiting.
+                                </p>
+                                <p class="memorial-quote">
+                                    "Waiting is just another form of remembrance."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Divider -->
+                <div class="memorial-divider fade-in-element"></div>
+                
+                <!-- Entry 3 -->
+                <div class="memorial-entry fade-in-element">
+                    <div class="row g-4 align-items-center">
+                        <div class="col-lg-6">
+                            <div class="memorial-image-container">
+                                <img src="assets/images/archive3.jpg" alt="Archive Entry" class="memorial-image">
+                                <div class="image-overlay"></div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="memorial-content">
+                                <h3 class="memorial-date">ENTRY 03</h3>
+                                <p class="memorial-timestamp">— PRESENT DAY —</p>
+                                <p class="memorial-text">
+                                    Now you are reading this. Now you are part of the archive. 
+                                    Every word, every scroll, every moment of recognition feeds the memory. 
+                                    The story continues not in what was, but in what is witnessed.
+                                </p>
+                                <p class="memorial-quote">
+                                    "To remember is to breathe life into ghosts."
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
